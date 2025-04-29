@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zlendo – AI Strategy & Consulting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-white border-bottom">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand " href="index.html"><img src="assets/images/logo-main.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMain" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+
+            <!-- Products Mega Menu -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+              <div class="dropdown-menu mega-menu py-4 px-2" id="productsMega">
+                <div class="container">
+                  <ul class="nav nav-pills mega-tabs mb-4 column-gap-2" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#tabHR" onclick="event.stopPropagation()">Human Resource</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tabFin" onclick="event.stopPropagation()">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tabAI" onclick="event.stopPropagation()">AI</a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content mega-body ">
+                    <!-- Human Resource -->
+                    <div class="tab-pane fade show active" id="tabHR">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h6 class="text-uppercase text-muted">Solution</h6>
+                          <h5>Zlendo People</h5>
+                          <p>Optimizing People Management with an Advanced Zlendo People System for Seamless Process.</p>
+                          <a href="#" class="text-orange ">Learn More</a>
+                        </div>
+                        <div class="col-md-8">
+                          <h6 class="text-uppercase text-muted">Tools</h6>
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>People Management</strong><br>
+                              <small>Streamline employee data and simplify HR operations</small>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Timesheet Management</strong><br>
+                              <small>Track hours and approvals</small>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Leave Management</strong><br>
+                              <small>Automate leave tracking</small>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Payroll Management</strong><br>
+                              <small>Compliant and secure payroll</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Finance -->
+                    <div class="tab-pane fade" id="tabFin">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h6 class="text-uppercase text-muted">Solution</h6>
+                          <h5>Zlendo Finance</h5>
+                          <p>Real-time financial insights and automated accounting workflows to drive profitability.</p>
+                          <a href="#" class="text-orange ">Learn More</a>
+                        </div>
+                        <div class="col-md-8">
+                          <h6 class="text-uppercase text-muted">Tools</h6>
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Expense Management</strong><br>
+                              <small>Automate reporting and approvals</small>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Invoice Processing</strong><br>
+                              <small>AI-powered OCR</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="tab-pane fade" id="tabAI">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h6 class="text-uppercase text-muted">Solution</h6>
+                          <h5>Zlendo AI</h5>
+                          <p>End-to-end AI pipelines for predictive analytics, NLP, and computer vision.</p>
+                          <a href="#" class="text-orange ">Learn More</a>
+                        </div>
+                        <div class="col-md-8">
+                          <h6 class="text-uppercase text-muted">Tools</h6>
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>Predictive Analytics</strong><br>
+                              <small>Forecast trends and behavior</small>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 tool-item">
+                              <strong>AI Chatbots</strong><br>
+                              <small>Conversational automation</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /.tab-content -->
+                </div>
+              </div>
+            </li>
+
+            <!-- Services dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">
+                Services
+              </a>
+              <ul class="dropdown-menu p-3">
+                <li><a class="dropdown-item" href="ai-strategy-consulting.html">AI Strategy & Consulting</a></li>
+                <li><a class="dropdown-item" href="custom-ai-dev.html">Custom AI Development</a></li>
+                <li><a class="dropdown-item" href="ai-integration-deployment.html">AI Integration & Deployment</a></li>
+                <li><a class="dropdown-item" href="managed-ai-services.html">Managed AI Services</a></li>
+                <li><a class="dropdown-item" href="software-dev.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="delivery.html">Delivery</a></li>
+              </ul>
+            </li>
+
+            <!-- Solutions dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">
+                Solutions
+              </a>
+              <ul class="dropdown-menu  p-3">
+                <li><a class="dropdown-item" href="predictive-analytics.html">AI-Powered Predictive Analytics</a></li>
+                <li><a class="dropdown-item" href="process-automation.html">Intelligent Process Automation</a></li>
+                <li><a class="dropdown-item" href="iot-experience.html">AI for Industrial IoT</a></li>
+                <li><a class="dropdown-item" href="customer-experience.html">Customer Experience AI</a></li>
+                <li><a class="dropdown-item" href="supply-chain.html">AI-Driven Supply Chain Optimization</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="contact-us.html" class="btn-padding btn-outline-primary rounded-pill ms-lg-3">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!-- Banner Section -->
+<section class="banner">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-12 col-md-6">
+        <div class="banner-txt">
+          <h1 class="mb-3">AI Strategy & <span class="text-orange">Consulting</span></h1>
+          <p class="mb-3">Not sure where to start? Our experts craft a custom AI roadmap aligned with your business goals—identifying high-impact use cases and scalable solutions.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="banner-img">
+          <img src="assets/images/predictive-analytics-banner.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Impact Text Section -->
+<section class="what-ipa-txt section-padding">
+  <div class="container text-start">
+    <h2 class="w-75 mx-auto text-orange">
+      AI success isn’t about technology alone. It’s about embedding intelligence into business models, operations, and growth strategies — that’s where we come in.
+    </h2>
+  </div>
+</section>
+
+<!-- Pain Points Section -->
+<section class="why-zlendo section-padding bg-grey">
+  <div class="container text-center">
+    <h2 class="section-heading">The Business Challenges</h2>
+    <p class="mt-3 mb-4">Why companies struggle to operationalize AI:</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-12 col-sm-6 mb-3">
+        <div class="light-card text-center">
+          <img src="assets/images/lt-sample-icon.svg" class="d-inline-block">
+          <h5 class="mt-2 mb-2">Unclear AI Roadmaps</h5>
+          <p class="lt-desc-txt">No strategic vision tying AI initiatives to real business outcomes.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 col-sm-6 mb-3">
+        <div class="light-card text-center">
+          <img src="assets/images/lt-sample-icon.svg" class="d-inline-block">
+          <h5 class="mt-2 mb-2">Siloed Efforts</h5>
+          <p class="lt-desc-txt">Fragmented pilots that never scale across business units.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 col-sm-6 mb-3">
+        <div class="light-card text-center">
+          <img src="assets/images/lt-sample-icon.svg" class="d-inline-block">
+          <h5 class="mt-2 mb-2">Talent Gaps</h5>
+          <p class="lt-desc-txt">Shortage of leadership and execution expertise for AI adoption.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Zlendo Section -->
+<section class="why-zlendo section-padding">
+  <div class="container text-center">
+    <h2 class="section-heading">Why Choose Zlendo for AI Consulting?</h2>
+    <p class="my-4">We don’t just deliver solutions. We architect transformations.</p>
+    <div class="row">
+      <div class="col-md-3 col-12 col-sm-6">
+        <div class="why-card text-center">
+          <img src="assets/images/industry-expert.png" class="d-inline-block">
+          <h5 class="mt-2">Enterprise Alignment</h5>
+          <p class="lt-desc-txt">Strategies that work for your business—not just for your tech stack.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 col-sm-6">
+        <div class="why-card text-center">
+          <img src="assets/images/endtoend.png" class="d-inline-block">
+          <h5 class="mt-2">Industry Best Practices</h5>
+          <p class="lt-desc-txt">Domain-specific templates to jumpstart AI adoption across verticals.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 col-sm-6">
+        <div class="why-card text-center">
+          <img src="assets/images/secure.png" class="d-inline-block">
+          <h5 class="mt-2">Rapid ROI Roadmaps</h5>
+          <p class="lt-desc-txt">AI success sprints that show real business impact fast.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 col-sm-6">
+        <div class="why-card text-center">
+          <img src="assets/images/success.png" class="d-inline-block">
+          <h5 class="mt-2">Change Management Support</h5>
+          <p class="lt-desc-txt">Empower your teams for sustainable transformation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="section-padding">
+  <div class="container">
+    <h3 class="section-heading text-center mb-5">Our AI Strategy & Consulting Offerings</h3>
+
+    <div class="fix-div">
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-12 col-md-5">
+          <h5>AI Maturity Assessment</h5>  
+          <p class="lt-desc-txt"> Evaluate your current capabilities, data readiness, and organizational alignment to benchmark your AI maturity and roadmap.</p>
+        </div>
+        <div class="col-12 col-md-5">
+          <img src="assets/images/rafiki.png" class="img-fluid w-100">
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-12 col-md-5">
+          <img src="assets/images/rafiki.png" class="img-fluid w-100">
+        </div>
+        <div class="col-12 col-md-5">
+          <h5>ROI-Driven Use Case Prioritization</h5>  
+          <p class="lt-desc-txt">Identify and rank AI initiatives by potential impact and feasibility—so you invest in projects that deliver the fastest, highest returns.</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-12 col-md-5">
+          <h5>Change Management Support</h5>  
+          <p class="lt-desc-txt">Equip your teams with the training, governance frameworks, and adoption roadmaps needed to embed AI into everyday workflows.</p>
+        </div>
+        <div class="col-12 col-md-5">
+          <img src="assets/images/rafiki.png" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Impact Section -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h3 class="section-heading">Real-World Impact</h3>
+    <p class="mb-4">See how AI strategy accelerates enterprise growth</p>
+
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="stat-card position-relative p-4 bg-white">
+          <span class="stat-dot"></span>
+          <div class="text-start">
+            <h3 class="display-6 mb-2 text-orange">50%</h3>
+            <p class="mb-0 text-muted">Faster Time to Market</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="stat-card position-relative p-4 bg-white">
+          <span class="stat-dot"></span>
+          <div class="text-start">
+            <h3 class="display-6 mb-2 text-orange">35%</h3>
+            <p class="mb-0 text-muted">Increased AI Project Success Rate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="stat-card position-relative p-4 bg-white">
+          <span class="stat-dot"></span>
+          <div class="text-start">
+            <h3 class="display-6 mb-2 text-orange">40%</h3>
+            <p class="mb-0 text-muted">Reduction in Operational Costs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="stat-card position-relative p-4 bg-white">
+          <span class="stat-dot"></span>
+          <div class="text-start">
+            <h3 class="display-6 mb-2 text-orange">60%</h3>
+            <p class="mb-0 text-muted">Employee AI Adoption Boost</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta section-padding">
+  <div class="container text-center">
+    <h5 class="section-heading mb-3">Let's Craft Your Winning AI Strategy</h5>
+    <p class="lead mb-4">Book a discovery call with Zlendo’s AI consultants today.</p>
+    <a href="" class="primary-btn btn-padding">Get Started</a>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
